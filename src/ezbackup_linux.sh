@@ -1,6 +1,7 @@
+cd /
 sudo tar -cvpzf backuphome.tar.gz /home --one-file-system \
---exclude=/backuphome.tar.gz\
---exclude=/home/dd/Downloads/back0\
+--exclude=/backuphome.tar.gz \
+--exclude=/home/dd/Downloads/back0 \
 --exclude=/home/*/.gvfs \
 --exclude=/home/*/.cache \ 
 --exclude=/home/*/.local/share/Trash /
