@@ -1,21 +1,8 @@
-sudo tar -X exclude.txt -zcpvf etc-backup.tgz domains
-sudo tar -X exclude.txt -zcpvf etc-backup.tgz --one-file-system domains
 
-
+cd /
 sudo tar -X exclude.txt -zcpvf backup_home.tgz --one-file-system home
 
-/home/backup_home.tar.gz
-/home/backup_sys.tar.gz
-/home/backup_home.tgz
-/home/backup_sys.tgz
-/home/dd/Downloads/back0
-/home/*/.gvfs
-/home/*/.cache
-/home/*/.local/share/Trash 
-/home/dd/.gvfs
-/home/dd/.cache 
-/home/dd/.local/share/Trash
-
+home/dd/Downloads/backups
 home/backup_home.tar.gz
 home/backup_sys.tar.gz
 home/backup_home.tgz
