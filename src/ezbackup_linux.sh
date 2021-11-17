@@ -1,10 +1,50 @@
-cd /
-sudo tar -cvpzf backuphome.tar.gz /home --one-file-system \
+sudo tar -X exclude.txt -zcpvf etc-backup.tgz domains
+sudo tar -X exclude.txt -zcpvf etc-backup.tgz --one-file-system domains
+
+
+sudo tar -X exclude.txt -zcpvf backup_home.tgz --one-file-system home
+
+/home/backup_home.tar.gz
+/home/backup_sys.tar.gz
+/home/backup_home.tgz
+/home/backup_sys.tgz
+/home/dd/Downloads/back0
+/home/*/.gvfs
+/home/*/.cache
+/home/*/.local/share/Trash 
+/home/dd/.gvfs
+/home/dd/.cache 
+/home/dd/.local/share/Trash
+
+home/backup_home.tar.gz
+home/backup_sys.tar.gz
+home/backup_home.tgz
+home/backup_sys.tgz
+home/dd/Downloads/back0
+home/*/.gvfs
+home/*/.cache
+home/*/.local/share/Trash 
+home/dd/.gvfs
+home/dd/.cache 
+home/dd/.local/share/Trash
+
+
 --exclude=/backuphome.tar.gz \
 --exclude=/home/dd/Downloads/back0 \
 --exclude=/home/*/.gvfs \
 --exclude=/home/*/.cache \ 
---exclude=/home/*/.local/share/Trash /
+--exclude=/home/*/.local/share/Trash \
+domainss.tar.gz --one-file-system /domains
+/
+
+
+cd /
+sudo tar -cvpzf backuphome.tar.gz /home --one-file-system \
+--exclude=/backuphome.tar.gz \
+--exclude=/home/dd/Downloads/back0 \
+--exclude=/home/dd/.gvfs \
+--exclude=/home/dd/.cache \ 
+--exclude=/home/dd/.local/share/Trash /
 
 
 sudo tar czf /backup.tar.gz\
